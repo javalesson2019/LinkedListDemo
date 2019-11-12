@@ -2,7 +2,7 @@
 #include "node.h"
 
 
-node::node(student& stud, node* next = nullptr): student_(stud), next_(next)
+node::node(student& stud, node* next): student_(stud), next_(next)
 {
 }
 

@@ -11,6 +11,7 @@ public:
 	linked_list& operator=(linked_list&&) = default;
 	virtual ~linked_list();
 private:
+	int count;
 	node* head; // голова списка
 	node* tail; // хвост списка
 public:

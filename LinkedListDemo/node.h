@@ -4,7 +4,7 @@
 class node
 {
 public:
-	node(student& stud, node* next);
+	node(student& stud, node* next = nullptr);
 	node(const node&) = delete;
 	node& operator=(const node&) = delete;
 	node(node&&) = default;

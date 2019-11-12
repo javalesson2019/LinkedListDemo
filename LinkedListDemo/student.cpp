@@ -62,3 +62,9 @@ void student::_copy(const student& orig)
 	set_name(orig.name);
 	set_phone(orig.phone);
 }
+
+std::ostream& operator<<(std::ostream& stream, const student& student)
+{
+	stream << "Name: " << student.get_name() << " " << " Phone: " << student.get_phone();
+	return stream;
+}
